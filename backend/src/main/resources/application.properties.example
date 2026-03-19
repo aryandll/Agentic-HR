@@ -1,0 +1,22 @@
+spring.application.name=hr-backend
+server.port=8080
+
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/hr_db
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA / Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+# Gemini Configuration (Get your key from https://aistudio.google.com)
+gemini.api-key=YOUR_GEMINI_API_KEY
+gemini.model=gemini-2.5-flash
+
+# File Upload Configuration (for resume uploads)
+spring.servlet.multipart.enabled=true
+spring.servlet.multipart.max-file-size=20MB
+spring.servlet.multipart.max-request-size=20MB
